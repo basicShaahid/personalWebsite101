@@ -10,9 +10,9 @@ export default function App() {
     {
       name: "gem_porto",
       description:
-        "A GitHub project from my portfolio, linked directly so visitors can open the repository.",
+        "A live portfolio project from my work, linked directly so visitors can open the deployed website.",
       tech: ["React", "Portfolio", "Web"],
-      url: "https://github.com/basicShaahid/gem_porto",
+      url: "https://gem-porto.vercel.app/",
     },
   ];
 
@@ -86,7 +86,7 @@ export default function App() {
                   Purpose
                 </p>
                 <p className="mt-2 text-sm leading-6 text-zinc-400">
-                  A direct portfolio where the work stands out first and every project opens straight to GitHub.
+                  A direct portfolio where the work stands out first and every project opens straight to the live project site.
                 </p>
               </div>
               <div>
@@ -145,7 +145,7 @@ export default function App() {
                   {project.name}
                 </h3>
                 <span className="border border-red-600/40 px-2 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-red-400 transition group-hover:border-red-700 group-hover:text-red-700">
-                  GitHub
+                  Live Site
                 </span>
               </div>
               <p className="mt-5 text-sm leading-6 text-zinc-400 transition group-hover:text-red-800">
