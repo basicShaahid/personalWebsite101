@@ -1,7 +1,8 @@
 export default function App() {
   const profile = {
     name: "Shaahid Fawzi",
-    title: "building projects until I get a job",    github: "https://github.com/basicShaahid",
+    title: "building projects until I get a job",
+    github: "https://github.com/basicShaahid",
     email: "you@example.com",
     linkedin: "https://www.linkedin.com/in/shaahid-fawzi-690741195",
   };
@@ -14,6 +15,13 @@ export default function App() {
       tech: ["React", "Portfolio", "Web"],
       url: "https://gem-porto.vercel.app/",
     },
+    {
+      name: "psychbot",
+      description:
+        "A live project from my portfolio, linked directly so visitors can open the deployed website.",
+      tech: ["Web App", "AI", "Vercel"],
+      url: "https://psychbot-pi.vercel.app/",
+    },
   ];
 
   return (
@@ -23,6 +31,58 @@ export default function App() {
       <div className="absolute right-[-60px] top-40 h-96 w-96 rotate-12 border border-white/10" />
       <div className="absolute bottom-16 left-1/2 h-56 w-56 -translate-x-1/2 rounded-full bg-red-700/10 blur-3xl" />
       <div className="absolute inset-0 opacity-[0.07] [background-image:linear-gradient(rgba(255,255,255,0.8)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.8)_1px,transparent_1px)] [background-size:80px_80px]" />
+      <div className="absolute -top-20 left-[10%] h-72 w-72 rounded-full bg-red-600/10 blur-3xl animate-[floatOne_10s_ease-in-out_infinite]" />
+      <div className="absolute right-[8%] top-[30%] h-80 w-80 rounded-full bg-white/5 blur-3xl animate-[floatTwo_14s_ease-in-out_infinite]" />
+      <div className="absolute bottom-[-40px] left-[35%] h-64 w-64 rounded-full bg-red-500/10 blur-3xl animate-[floatThree_12s_ease-in-out_infinite]" />
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="absolute left-[-20%] top-16 h-px w-1/2 rotate-6 bg-gradient-to-r from-transparent via-red-500/50 to-transparent animate-[slideOne_9s_linear_infinite]" />
+        <div className="absolute right-[-20%] top-1/2 h-px w-1/3 -rotate-12 bg-gradient-to-r from-transparent via-white/40 to-transparent animate-[slideTwo_11s_linear_infinite]" />
+        <div className="absolute bottom-24 left-[-10%] h-px w-1/4 rotate-12 bg-gradient-to-r from-transparent via-red-400/50 to-transparent animate-[slideThree_8s_linear_infinite]" />
+
+        <span className="absolute left-[8%] top-[18%] h-1.5 w-1.5 rounded-full bg-white/80 animate-[sparkle_5s_ease-in-out_infinite]" />
+        <span className="absolute left-[22%] top-[70%] h-1 w-1 rounded-full bg-red-500/80 animate-[sparkle_7s_ease-in-out_infinite]" />
+        <span className="absolute left-[38%] top-[28%] h-1.5 w-1.5 rounded-full bg-white/70 animate-[sparkle_6s_ease-in-out_infinite]" />
+        <span className="absolute left-[52%] top-[60%] h-1 w-1 rounded-full bg-red-400/80 animate-[sparkle_8s_ease-in-out_infinite]" />
+        <span className="absolute left-[68%] top-[22%] h-1.5 w-1.5 rounded-full bg-white/80 animate-[sparkle_5.5s_ease-in-out_infinite]" />
+        <span className="absolute left-[82%] top-[74%] h-1 w-1 rounded-full bg-red-500/80 animate-[sparkle_6.5s_ease-in-out_infinite]" />
+      </div>
+
+      <style>{`
+        @keyframes floatOne {
+          0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+          50% { transform: translate3d(40px, 30px, 0) scale(1.08); }
+        }
+        @keyframes floatTwo {
+          0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+          50% { transform: translate3d(-50px, 40px, 0) scale(1.12); }
+        }
+        @keyframes floatThree {
+          0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+          50% { transform: translate3d(30px, -35px, 0) scale(1.06); }
+        }
+        @keyframes slideOne {
+          0% { transform: translateX(0) rotate(6deg); opacity: 0; }
+          15% { opacity: 1; }
+          85% { opacity: 1; }
+          100% { transform: translateX(140%) rotate(6deg); opacity: 0; }
+        }
+        @keyframes slideTwo {
+          0% { transform: translateX(0) rotate(-12deg); opacity: 0; }
+          15% { opacity: 1; }
+          85% { opacity: 1; }
+          100% { transform: translateX(-140%) rotate(-12deg); opacity: 0; }
+        }
+        @keyframes slideThree {
+          0% { transform: translateX(0) rotate(12deg); opacity: 0; }
+          20% { opacity: 1; }
+          80% { opacity: 1; }
+          100% { transform: translateX(180%) rotate(12deg); opacity: 0; }
+        }
+        @keyframes sparkle {
+          0%, 100% { opacity: 0.25; transform: scale(1); }
+          50% { opacity: 1; transform: scale(1.8); }
+        }
+      `}</style>
 
       <section className="relative mx-auto max-w-6xl px-6 py-16 md:py-24">
         <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
